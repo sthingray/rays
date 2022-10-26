@@ -1,0 +1,55 @@
+div.lesson{
+    width:65%;
+    float:left;
+}
+div.REPL{
+    width:35%;
+    float:left;
+
+}
+div.title{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 2px #666666;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #333333;
+}
+#Push{
+    display: none;
+}
+.Push{
+    display: inline-block;
+    color:#000000;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.Brython{
+    background: #ffaf74;
+    height: 80px;
+}
+#Push:checked+label+.Brython{
+    display: none;
+}
+h1{
+    color: #000000;
+    text-align:center;
+}
+h2{
+    color: #000000;
+    text-align:center;
+
+}
+label{
+    display: inline-block;
+    color: #ffffff;
+    background: #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+span{
+    text-align:center;
+    float:right;
+}
