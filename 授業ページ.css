@@ -5,7 +5,7 @@ div.lesson{
 div.REPL{
     width:35%;
     float:left;
-    text-align:center;
+
 }
 div.title{
     margin: 0;
@@ -16,6 +16,23 @@ div.title{
     color: #ffffff;
     background-color: #333333;
 }
+#Push{
+    display: none;
+}
+.Push{
+    display: inline-block;
+    color:#000000;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.Brython{
+    background: #ffaf74;
+    height: 80px;
+}
+#Push:checked+label+.Brython{
+    display: none;
+}
 h1{
     color: #000000;
     text-align:center;
@@ -25,11 +42,14 @@ h2{
     text-align:center;
 
 }
+label{
+    display: inline-block;
+    color: #ffffff;
+    background: #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 span{
     text-align:center;
     float:right;
-}
-iframe{
-    position:fixed;
-    bottom:0px;
 }
