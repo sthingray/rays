@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'team_app',
-    'accounts',
-    'authtest',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'js'
 
-TIME_ZONE = 'Tokyo'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
