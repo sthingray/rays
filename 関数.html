@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>関数</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+ <script src="/js/brython.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="四則演算・問題.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>関数</h1>
+<div class="lesson">
+
+<h2>関数とは</h2>
+<h3>いろいろな値をとる文字を変数という。<br>
+ｘの値を決めると、それに伴ってｙの値が１つだけ決まる場合、ｙはｘの関数である。<br></h3>
+<p>【例１】①　～　④で、ｙはｘの関数といえるものを全て選べ。<br>
+①1本x円の鉛筆を5本買ったときの代金がy円である。<br>
+②周の長さがxcmの長方形の面積がycm²である。<br>
+③１辺の長さがxcmの正方形の面積がycm²である。<br>
+④男女合わせて35人のクラスで、男子の平均点が80点、女子の平均がx点のときのクラスの平均点がy点である。<br>
+【答】①③<br></p>
+<p>【解説】<br>
+① 1本100円なら、代金は500円、1本80円なら代金は400円、<br>
+つまりx=100のときy=500, x=80のときy=400<br>
+このようにxの値が決まれば、yの値が１つに決まるので関数であると言える。
+<br>    
+②周の長さが12cmで、縦3cm横3cmのとき面積は9cm²、<br>
+同じく周の長さが12cmでも縦2cm 横4cmなら面積は8cm²になる。<br>
+このようにxの値が決まってもyの値が1つに決まらないので関数ではない。
+<br>    
+③1辺の長さが4cmの正方形の面積は16cm²、1辺2cmなら面積は4cm²、<br>
+xの値が決まればyの値が1つに決まるので関数である。
+<br>    
+④男子、女子のそれぞれの平均点がわかっても男子、女子のそれぞれの人数がわからないとクラスの平均点は出ないので関数ではない。
+<br>    
+</p>
+        
+<h2>変域</h2>
+<h3>変数の取りうる値の範囲をその変数の変域という。<br>
+変域は不等号を使って表す。端の数を含むときは「≦、≧」、含まないときは「＜、＞」を使う。</h3>
+<p>【例２】xは2以上10以下<br>
+2≦x≦10</p>
+</div>
+
+<div class="REPL">
+<ul>
+<div class="Brython">
+<a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<label class="Push" for="Push">この下にREPLを開く</label>
+<iframe src="http://brython.info/console.html" width="800" height="400"></iframe><input type="checkbox" id="Push">
+</div>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>代入・式の値</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+ <script src="/js/brython.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="四則演算・問題.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>代入・式の値</h1>
+<div class="lesson">
+
+<h2>代入とは</h2>
+<h3>式の中の文字を数字に置き換えることを代入という。<br>
+また、代入して計算した結果を式の値という。<br></h3>
+<p>【例】 x=2のとき、 x²+5x−8の値を求める。<br>
+x²+5x−8　=　x×x+5×x−8　　　省略してある×や÷の記号を使って表わす。<br>
+　　　　　=　2×2+5×2−8　　　xのところに2をいれる。<br>
+　　　　　=　4+10−8<br>
+　　　　　=　6<br>
+<br></p>
+負の数を代入する
+<h3>ｘが負の数の場合、（　　）をつけて代入する。</h3>
+<p>【例】 x=–3のとき、x²−2x+8の値を求める。<br>
+x²−2x+8　=　x×x−2×x+8<br>
+　　　　　=　(−3)×(−3)−2×(−3)+8<br>
+　　　　　=　23<br></p>
+        
+<h2>累乗・割り算</h2>
+累乗
+<p>【例】 x=6のとき次の式の値をそれぞれ求める。<br>
+① -x²<br>
+−x²　  =　−x×x<br>
+　　　=　−6×6<br>
+　　　=　−36<br>
+
+②(-x²)<br>
+(−x)2　  =　(−x)×(−x)<br>
+　　　　=　(−6)×(−6)<br>
+　　　　=　36<br></p>
+
+割り算
+<h3>割り算は逆数の掛け算にする。</h3>
+<p>【例】 x=8/3 のとき次の式の値をそれぞれ求める。
+①x/4<br>
+x/4　=　x÷4<br>
+　　　=　x×1/4<br>
+　　　=　8/3×1/4<br>
+　　　=　2/3<br>
+②24/x<br>
+24/x　=　24÷x<br>
+　　　=　24÷8/3<br>
+　　　=　24×3/8<br>
+　　　=　9<br></p>
+
+</div>
+
+<div class="REPL">
+<ul>
+<div class="Brython">
+<a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<label class="Push" for="Push">この下にREPLを開く</label>
+<iframe src="http://brython.info/console.html" width="800" height="400"></iframe><input type="checkbox" id="Push">
+</div>
+</ul>
+</div>
+</body>
+</html>

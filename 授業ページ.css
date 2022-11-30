@@ -1,20 +1,25 @@
+div.sticky-item{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 2px #8f9cff;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #99a5ff;
+    position:sticky;
+    top:0;
+}
 div.lesson{
-    width:65%;
+    width:55%;
     float:left;
 }
 div.REPL{
     width:35%;
     float:left;
-
 }
-div.title{
-    margin: 0;
-    padding: 10px 0 10px 0;
-    border-bottom: solid 2px #666666;
-    font-family: sans-serif;
-    font-size: 10px;
-    color: #ffffff;
-    background-color: #333333;
+div.side{
+    width:10%;
+    float:left;
 }
 #Push{
     display: none;
@@ -25,22 +30,56 @@ div.title{
     background: #b6beff;
     padding: 5px 10px;
     cursor: pointer;
+    position:fixed;
 }
 .Brython{
-    background: #ffaf74;
-    height: 80px;
+    height: 100px;
+    position: fixed;
 }
 #Push:checked+label+.Brython{
     display: none;
 }
 h1{
     color: #000000;
+    background-color: #ffffff;
     text-align:center;
 }
 h2{
     color: #000000;
     text-align:center;
-
+}
+h3{
+    font-size:15px;
+    padding: 5px 10px 5px 10px;
+    background-color:#e5f776
+}
+p{
+    padding:3px 5px 3px 5px;
+    background-color:#d9e1e8;
+    border: solid 1px #f0804c
+}
+.side ul {
+    margin: 0px;
+    padding: 0 10px 0 10px;
+}
+li {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.side li {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    border-right: solid 2px #cccccc;
+    background-color: #eeeeee;
+}
+.side a {
+    color: #444444;
+    text-decoration: none;
+  }
+span{
+    text-align:center;
+    float:right;
 }
 label{
     display: inline-block;
@@ -48,8 +87,4 @@ label{
     background: #000000;
     padding: 5px 10px;
     cursor: pointer;
-}
-span{
-    text-align:center;
-    float:right;
 }
