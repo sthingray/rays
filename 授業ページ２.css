@@ -46,6 +46,17 @@ p{
     background-color:#d9e1e8;
     border: solid 1px #f0804c
 }
+span{
+    text-align:center;
+    float:right;
+}
+label{
+    display: inline-block;
+    color: #ffffff;
+    background: #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 html, body {
     overflow-x: hidden;
@@ -190,15 +201,4 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
-}
-span{
-    text-align:center;
-    float:right;
-}
-label{
-    display: inline-block;
-    color: #ffffff;
-    background: #000000;
-    padding: 5px 10px;
-    cursor: pointer;
 }
