@@ -34,24 +34,58 @@
                     <p class="mt-4 text-center text-gray-700 leading-normal px-6 hidden hover:block">初心者</p>
                 </div>
             </div>
-            <p id="tabcontrol">
-                <a href="#tabpage1">ステップ1</a>
-                <a href="#tabpage2">ステップ2</a>
-                <a href="#tabpage3">ステップ3</a>
-            </p>
-            <div id="tabbody">
-                <div id="tabpage1">
-                    <a href="{% url 'func' %}" class="home">関数</a>
-                    <a href="{% url 'functest' %}" class="home">関数：演習問題</a>
-                    <a href="{% url 'calcu' %}" class="home">四則演算</a>
+            
+            <div class="area">
+                <input type="radio" name="tab_name" id="tab1" checked>
+                <label class="tab_class" for="tab1">STEP1</label>
+                <div class="content_class">
+                    <div id="tabbody">
+                        <div id="tabpage1">
+                            <p><a href="{% url 'calcu' %}" class="home">四則演算</a></p>
+                            <p><a href="{% url 'calcutest' %}" class="home">四則演算：演習問題</a></p>
+                            <p><a href="{% url 'func' %}" class="home">関数</a></p>
+                            <p><a href="{% url 'functest' %}" class="home">関数：演習問題</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div id="tabpage2">
-                    <a href="{% url 'functest' %}" class="home">関数：演習問題</a>
+                <input type="radio" name="tab_name" id="tab2" >
+                <label class="tab_class" for="tab2">STEP2</label>
+                <div class="content_class">
+                    <div id="tabbody">
+                        <div id="tabpage2">
+                            <p>タブ2のコンテンツを表示します</p>
+                        </div>
+                    </div>
                 </div>
-                <div id="tabpage3">
-                    <a href="{% url 'calcu' %}" class="home">四則演算</a>
+                <input type="radio" name="tab_name" id="tab3" >
+                <label class="tab_class" for="tab3">STEP3</label>
+                <div class="content_class">
+                    <div id="tabbody">
+                        <div id="tabpage3">
+                            <p>タブ3のコンテンツを表示します</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="tab_name" id="tab4" >
+                <label class="tab_class" for="tab4">STEP4</label>
+                <div class="content_class">
+                    <div id="tabbody">
+                        <div id="tabpage1">
+                            <p>タブ4のコンテンツを表示します</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="tab_name" id="tab5" >
+                <label class="tab_class" for="tab5">STEP5</label>
+                <div class="content_class">
+                    <div id="tabbody">
+                        <div id="tabpage2">
+                            <p>タブ4のコンテンツを表示します</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <script type="text/javascript">
 
                 var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
