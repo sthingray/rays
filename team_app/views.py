@@ -4,34 +4,33 @@ import json
 
 # Create your views here.
 def home(request):
-    return render(request, 'team_app/home.index', {})
+    return render(request, 'team_app/home.html')
 
-def index(request):
-    if request.method == "POST":
-        article = News(
-            title=request.POST['title'], body=request.POST['text'], grade=request.POST["grade"])
-        article.save()
+def mypage(request):
+    return render(request, 'team_app/mypage.html')
 
-    try:
-        news = News.objects.order_by('-posted_at')
-    except News.DoesNotExist:
-        raise Http404('this objects does not exist.')
+def lecture1(request):
+    return render(request, 'team_app/授業ページ.html')
 
-    context = {
-        'news': news,
-    }
+def lecture2(request):
+    return render(request, 'team_app/授業ページ2.html')
 
-    return render(request, 'team_app/home.html', context)
+def func(request):
+    return render(request, 'team_app/関数.html')
+
+def calcu(request):
+    return render(request, 'team_app/四則演算.html')
+
+def assi(request):
+    return render(request, 'team_app/代入と式の値.html')
+
+def functest(request):
+    return render(request, 'team_app/関数問題.html')
+
+def calcutest(request):
+    return render(request, 'team_app/四則演算問題.html')
+
+def alltest(request):
+    return render(request, 'team_app/演習問題.html')
 
 
-def mypage(request, news_id):
-    try:
-        news = News.objects.get(pk=news_id)
-    except News.DoesNotExit:
-        raise Http404("blog does not exit")
-
-    context = {
-        "news": news
-    }
-
-    return render(request, 'team_app/mypage.html', context)
