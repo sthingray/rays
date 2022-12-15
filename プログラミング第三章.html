@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第３章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第三章</h1>
+<div class="lesson">
+<h2>値と型の関係</h2>
+<h3>123と’ 123 ’は似たように見えますが、全くの別物です。<br>
+123は数ですが、 ‘123’は文字列です。<br>
+
+・123 + 45　＝　168<br>
+・‘123’ + ‘45’　＝　‘12345’<br></h3>
+
+<h3>文字列と数字は違うものなので足し合わせはできません。<br>
+
+・‘123’ + 45<br>
+TypeError: Can’t convert ‘int’ object to str implicitly<br>
+
+これは「重さ＋長さ」をしているようなものなので、答えを出すことはできません。<br></h3>
+
+<h3>pythonだけでなくプログラミング言語には「型」と呼ばれる、データの種類があります。<br>
+
+ここまで出てきた型は3種類<br>
+・int（イント）型：整数を表す（例：10, 45, -30）<br>
+・float（フロート）型：浮動小数点数（少数のこと）（例：3.14, -37.2, 1.0）<br>
+・str（スター）型：文字列（例：“python”, ‘123’, “型と値”）<br>
+    
+型によって、使える演算子や行われる処理が違います。<br>
+正しい型を組み合わせて使わないとエラーになります。<br></h3>
+    
+<p>数式の一部をint(), float(), str()で囲むとその値に変換することができます。<br>
+・int(“123”)<br>
+　　　123<br>
+・float(“11.23”) + 4.77<br>
+　　　16.0<br></p>
+
+<p>数式の一部をtype()で囲むとその部分の型の情報を得ることができます。<br>
+・type(12.3)<br>
+　　class ‘float’<br>
+・type(“1.23”)<br>
+　　class ‘str’</p>
+
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

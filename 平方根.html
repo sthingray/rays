@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>平方根</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+ <script src="/js/brython.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="平方根・問題.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>平方根</h1>
+<div class="lesson">
+
+<h2>平方根とは</h2>
+<h3>平方根とは２乗の逆のことである。<br>
+「５の２乗は25、また、（－5）の2乗も25である。」<br>
+そのため25の平方根は＋5と－5である。</h3>
+<p>【例】 （□）² = A<br>
+□に当てはまる数がAの平方根である。<br></p>
+
+<h2>平方根の性質</h2>
+<p>【例】（□）² = 1のとき<br>
+□には１、または－１が入る。つまり１の平方根は±1。<br></p>
+<p>【例】（□）² = 9のとき<br>
+□には３または－３が入る。9の平方根は±3。</p>
+<h3>このように正の数の平方根は、正と負の２つあり、それらの絶対値は等しい。<br>
+また、（□）² = －４を成り立たせるような□に入る数は無いので、負の数の平方根は存在しない。</h3>
+
+<h2>積と商</h2>
+<p>平方根の計算ポイント①<br>
+掛け算、割り算はルートの中どうし計算できる。<br>
+　　　　　　　　　　　　　　　a<br>
+√a × √b = √ab , √a ÷ √b = √――<br>
+　　　　　　　　　　　　　　　b<br>
+</p>
+
+<h2>加法と減法</h2>
+<p>平方根の計算ポイント②<br>
+平方根の足し算・引き算は同類項をまとめるのと同じ方法。<br>
+掛け算や割り算は√の中どうしで計算できるが、足し算・引き算はできないので注意が必要である。<br>
+例として√2 + √3 は計算できないが、√3 + √3のようにルートの中が全く同じ数の場合は計算できる。<br>
+
+【例】√3 + √3 = 2√3
+
+</p>
+
+</div>
+
+<div class="REPL">
+<ul>
+<div class="Brython">
+<a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<label class="Push" for="Push">この下にREPLを開く</label>
+<iframe src="http://brython.info/console.html" width="800" height="400"></iframe><input type="checkbox" id="Push">
+</div>
+</ul>
+</div>
+</body>
+</html>

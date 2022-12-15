@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第１章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第一章</h1>
+<div class="lesson">
+<h2>数学の計算</h2>
+<h3>pythonで計算に使う記号は、<br>
+「+」が足し算<br>
+「-」が引き算<br>
+「*」がかけ算<br>
+「/」が割り算<br>
+を表しています。</h3>
+<p>例題<br>
+Q1：２＋３　Q2：３－４　Q3：２ * ３　Q4：６ / ３
+</p>
+<div class="switchdsp">
+<label for="l-1">
+<span class="clicktxt">回答をクリックして確認</span>
+</label>
+<input type="checkbox" id="l-1"><div class="dsp">
+<p>回答<br>
+A1・５　A2・-１　A3・６　A4・２</p>
+</div></div>
+<h4>このように計算に使う記号を「演算子」と呼びます。</h4>
+<br>
+<h3>「//」（スラッシュ2つ）で整数の割り算、「%」でその余りを計算します。</h3>
+<p>【例】５÷３＝1...2<br>
+・5 // 3　＝　1<br>
+<br>
+・5 ％ 3　＝　2</p>
+    
+<h3>累乗の計算は「**」（アスタリスク2つ）で計算できます。</h3>
+<p>【例１】2 ** 2　＝　4<br>
+【例２】4 ** 2　＝　16<br></p>
+
+<p>「()」（小かっこ）を使って、計算の順番を変えることができます。<br>
+【例】1 + 2 * 3<br>
+・(1 + 2) * 3　＝　9<br>
+・1 + (2 * 3)　＝　7<br>
+<br>
+大かっこ [] や中かっこ｛｝は使わないので、複雑な指揮を書くときは（）をかさねます<br>
+・1 + ((2 + 3) * 4 - 5 )　＝　16<br></p>
+<h4>計算は数学の四則演算と同じ順番で行われます（除乗 → 和差）</h4>
+
+
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

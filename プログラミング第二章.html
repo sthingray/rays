@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第２章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第二章</h1>
+<div class="lesson">
+<h2>文字の計算</h2>
+<h3>数と同じように文字列も計算することができます。<br>
+文字列とは文字を並べて作られるデータのことです。<br></h3>
+<!---画像--->
+<h4>ほかの記号と区別するためにクオーテーション記号（　”や　’）で囲んで入力します。</h4>
+
+<p>pythonではこの二つは同じ意味になります。<br>
+・’python’<br>
+・”文字の計算”<br>
+・’3.141592’<br>
+・”3 + (4 - 1)” 　←　6にはならない！</p>
+<br>
+<p>「文字列＋文字列」は、その文字を連結したものになります。<br>
+・”abc” + “456”　＝　‘abc456’<br>
+・’123’ + ‘56’　＝　‘12356’</p>
+<p>「文字列*整数」「整数*文字列」は、同じ文字列をその回数繰り返したものになります。<br>
+・”toyo” * 3　＝　‘toyotoyotoyo’<br>
+・5 * “python”　＝　‘pythonpythonpythonpythonpython’</p>
+
+<h4>文字列に対して「-、/、//、%」は使えません。</h4>
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>
