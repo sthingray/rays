@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第９章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第九章</h1>
+<div class="lesson">
+<h2>listとfor</h2>
+<h3>pythonで複数からなるデータを扱いたい場合は「リスト」というものを使います。
+<br>
+リスト（list型）<br>
+値を順番にまとめて並べることができる型のことです。<br>
+[]の中にコンマ(,)で区切って指揮を並べれば、リストの値を作ることができます。<br>
+＞＞＞ [10, 20, 30]<br>
+＞＞＞ fruits = [‘apple’,‘banana’,‘melon’,‘orange’]<br>
+<br>
+要素が1つも入っていないからのリストを作ることもできます。<br>
+＞＞＞[]<br>
+<br>
+リストの中身を取り出すためには「リスト[番号]」と書きます。<br>
+この番号のことを「添字（そえじ）」と呼びます。<br>
+添字の番号は0から始まるため注意が必要です。<br>
+<br>
+＞＞＞[‘apple’,‘banana’,‘melon’,‘orange’]<br>
+　　　　1番目　　2番目　　3番目　　4番目<br>
+　　　　添字0　　添字1　　添字2　　添字3<br>
+</h3>
+
+<p>例題<br>
+月名（3文字）のリストが以下のように定義されています。<br>
+＞＞＞months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', Oct', 'Nov', 'Dec']<br>
+<br>
+3月（'Mar'）を取り出すためには、どのような式を書けばよいでしょうか。<br>
+答え<br>
+＞＞＞ months[2]<br>
+<br>
+リストのの中身を書き換えるためには「リスト[添字] = 式」のように書けばＯＫ！<br>
+＞＞＞ fruits = [‘apple’,‘banana’,‘melon’,‘orange’]<br>
+＞＞＞ fruits[1] = ‘grape’<br>
+＞＞＞ fruits<br>
+[‘apple’,‘grape’,‘melon’,‘orange’]<br></p>
+<p>リストは‘+’と‘*’は文字列と同じように使うことができます。<br>
+max(), min(), sum()などの新しい組込み関数もあるので調べて使ってみましょう！</p>
+<br>
+<h3>リストの中の要素一つ一つに同じ処理を繰り返し行うには、「for」を使います。<br>
+「リストA から要素を一つずつ 変数B に取り出して 処理C を実行」と書くには...<br>
+＞＞＞ for 変数B in リストA:<br>
+＞＞＞    処理C<br>
+<br>
+変数fruits の中身を一つずつ取り出すには...<br>
+＞＞＞fruits = [‘apple’,‘banana’,‘melon’,‘orange’]<br>
+＞＞＞for i in fruits:<br>
+＞＞＞　　print(i)<br>
+<br>
+apple<br>
+banana<br>
+melon<br>
+orange<br>
+<br>
+for文はネスト（forの中にforをいれること）してもＯＫ。</h3>
+
+<p>例<br>
+fruitsとcolorのすべての組み合わせを表示しましょう。<br>
+＞＞＞fruits = ['apple', 'banana', 'melon', 'orange']<br>
+＞＞＞color = ['red', 'blue', 'yellow', 'green']<br>
+＞＞＞for a in fruits:<br>
+＞＞＞　　for b in color:<br>
+＞＞＞　　　　print(a+b)<br>
+<br>
+applered<br>
+appleblue<br>
+appleyellow<br>
+applegreen<br>
+bananared<br>
+bananablue<br>
+bananayellow<br>
+bananagreen<br>
+melonred<br>
+melonblue<br>
+melonyellow<br>
+melongreen<br>
+orangered<br>
+orangeblue<br>
+orangeyellow<br>
+orangegreen</p>
+
+<h3>for文の中で「0～10の範囲を取り出したいな...」と思う時があるかもしれません。<br>
+そのようなときは「range()」を使いましょう。<br>
+「range(a, b)」で a以上 b未満 の整数列を表現することができます。</h3>
+<p>range()は厳密にはリストではないですが、組込み関数「list()」でリストに変換できます。<br>
+＞＞＞renge(0,10)<br>
+renge(0,10)<br>
+＞＞＞list(renge(0,10))<br>
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]　←10未満なので10は含まない結果になる。</p>
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

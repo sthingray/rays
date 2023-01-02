@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第５章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第五章</h1>
+<div class="lesson">
+<h2>関数</h2>
+<h3>pythonの関数はこのような形になっています。<br>
+＞＞＞def 関数名(変数):<br>
+＞＞＞　　計算式<br>
+＞＞＞　　return 返したい値<br>
+<br>
+実際に書いてみると...<br>
+＞＞＞def test(x, y):<br>
+＞＞＞　　total =  x + y + 10<br>
+＞＞＞　　return total<br>
+<br>
+実行例<br>
+＞＞＞test(4, 5)<br>
+＞＞＞19<br>
+<br>
+この関数ではtest()で入力した値を足し算して、さらに10足した数を返す関数となっています。<br>
+今回は実行例１行目でtest(4, 5)としているため、4+5+10=19となり、19という値が返されています。<br>
+では一行ずつ見ていきましょう。</h3>
+
+<p>＞＞＞def test(x, y):<br>
+この行では関数の名前と変数を指定しています。<br>
+“def”は「定義(difine)」を意味し、ここから関数を定義することを表しています。<br>
+関数名：test、関数の中で扱う変数：xとyとなっています。<br>
+変数はコンマ(,)で区切ることで複数指定できます。<br>
+最後のコロン(:)も忘れないようにしましょう！</p>
+
+<p>＞＞＞　　total = x + y + 10<br>
+1行目の「def」で関数定義を開始したら、2行目以降には関数の計算の処理を書いていきます。<br>
+関数での計算を終わりにして、結果を返すには「return 値or式」のように書きます。<br></p>
+
+<p>最後に、全体を見て注目するところはtotalの前にある空白です。<br>
+＞＞＞　　　total = x + y + 10<br>
+　　　^^^^<br>
+この空白4つは「インデント」と呼ばれるもので、1行目に所属するグループであることを表しています。<br>
+これを正しく入れていないとエラーになります。<br>
+<br>
+以下、エラーの例です。<br>
+IndentationError: expected an indented block<br>
+（インデントエラー：インデントされたブロックが必要です。）<br>
+これはインデント(字下げ)が正しくないことを表しています。def と return の間の行のインデントが正しいかを確認しましょう。</p>
+
+<h2>組込み関数</h2>
+<h3>組込み関数とは、自分で作らなくても初めから入っている関数のことです。<br>
+型変換で扱ったint(),float(),str()も組込み関数です。<br>
+それ以外にも様々な組込み関数があります、調べて活用していきましょう。</h3>
+
+<p>例<br>
+・abs(x)<br>
+　数ｘの絶対値を返す。<br>
+・max(a1, a2, a3, ...)<br>
+　引数の中から最大の値を返す。<br>
+・min(b1, b2, b3, ...)<br>
+　引数の中から最小の値を返す。<br>
+・len(s)<br>
+　文字列などの値ｓのながさを返す。<br>
+・help()<br>
+　ヘルプ機能（マニュアル）を呼び出す。</p>
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

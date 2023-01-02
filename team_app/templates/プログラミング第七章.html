@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第７章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第七章</h1>
+<div class="lesson">
+<h2>if文（もし～ならば）</h2>
+<h3>コンピュータの強みの一つは、条件判断により「賢い」仕組みを作れることです。<br>
+・「雨が降ってきたら、自動的に窓を閉める」<br>
+・「メッセージが届いたら、着信音を鳴らす」<br>
+・「水温が～℃以上になったら、火を止める」<br>
+<br>
+今回は条件に基づく制御を勉強します。</h3>
+<p>ある条件が成り立つときに何かを実行する場合は、「if」を用います。<br>
+「条件Ａが成り立つならば処理Ｂを実行する」と書くには、以下のような形にします。<br>
+if 条件Ａ:<br>
+　　処理Ｂ　<br>
+^^^^<br>
+def a():のようにインデントを忘れずに！</p>
+    
+<p>例題１：正しいパスワード「open」を入力した場合だけ秘密のメッセージを表示しよう<br>
+回答<br>
+＞＞＞password = ‘open’　　　　　　　　　　←パスワードを設定<br>
+＞＞＞message = ‘good!’　　　　　　　　　　←秘密のメッセージ設定<br>
+＞＞＞if input(‘合言葉は？’) == password:　←input()で入力を受け取り、条件分岐<br>
+＞＞＞　　print(message)　　　　　　　　　←print()でmessageの中身を表示<br>
+<br>
+※input(‘表示する内容’)で入力をインプットすることができる。<br>
+※print()で値を出力することができる。</p>
+<br>
+<p>例題の中にある“==”は「比較演算子」と呼ばれるものです。<br>
+他にも様々な種類があります。<br>
+・a == b : aはｂと等しい（数学の＝に相当）<br>
+・a != b : aはbと異なる （数学の≠に相当）<br>
+・a ＜ b : aはbより小さい<br>
+・a ＞ b : aはbより大きい<br>
+・a ＞= b : aはb以上である（数学の≧に相当）<br>
+・a ＜= b : aはb以下である（数学の≦に相当）<br></p>
+<h2>elseとelif</h2>
+<h3>条件が成り立たない場合の分岐を作る場合「else」を使います。<br>
+また、if以外の条件で成り立つ分岐を作るには「elif」を使います。</h3>
+<p>例題２：ph値に対する液性を表すプログラム<br>
+回答<br>
+＞＞＞ph = float(input(“ph値は？”))<br>
+＞＞＞if ph ＜ 7.0:　　　　　　　　←もし(if)なら...<br>
+＞＞＞　　print(“酸性です”)<br>
+＞＞＞elif ph == 7.0:　　　　　　　←それ以外(else)で、もし(if)なら...<br>
+＞＞＞　　print(“中性です”)<br>
+＞＞＞else:　　　　　　　　　　　　←それ以外(else)なら...<br>
+＞＞＞　　print(“アルカリ性です”)<br></p>
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

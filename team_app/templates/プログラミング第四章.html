@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第４章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第四章</h1>
+<div class="lesson">
+<h2>変数と代入</h2>
+<h3>コンピュータが動作するためには、「記憶」が必要です。<br>
+コックさんも、これまで何分間加熱したのか、調味料を入れたのかどうなのかわからなくなってしまったら、正しく料理を作れません。<br>
+<br>
+コンピューターでは計算の処理をするCPUと、記憶を管理するメモリ (memory) があります。<br>
+メモリと呼ばれる場所にプログラムやデータを記憶させ、内容を見たり書き換えたりしながら動作します。</h3>
+
+<p>Pythonでは「変数 (variable)」という仕組みを使ってデータを記憶したり取り出したりできます。<br>
+変数には2つの役割があります。<br>
+・代入：変数の中にデータを入れること<br>
+・参照：変数の中に入っているデータの中身を見ること<br></p>
+
+<p>代入するには「変数の名前＝式」の形を作らなければなりません。<br>
+・a = 2 + 3<br>
+これは2 + 3をした結果を、変数aに入れることを表しています。<br>
+<br>
+代入したデータは式の中で「変数名(ここではa)」と書くと参照できます。<br>
+では、 a + 3 はどうなるでしょう。<br>
+aの中に入っているのは 5 なので、そこに3を足すという式になります。<br>
+・a + 3<br>
+　8<br>
+代入で使用する「＝」は数学の統合とは意味が異なります。<br>
+等価関係を表すのではなく、右側の計算結果を左側に入れるという“操作”を表します。<br>
+・a = a + 3<br>
+　8<br></p>
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

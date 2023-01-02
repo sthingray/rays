@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第８章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第八章</h1>
+<div class="lesson">
+<h2>while文（～の間）</h2>
+<h3>コンピュータは繰り返しが得意です。何万回でも何億回でも正確に同じことを繰り返すことができます。<br>
+<br>
+「while 条件:」のように書けば「条件が成り立つ間」に限って繰り返しを行うことができます。</h3>
+
+<p>例題<br>
+＞＞＞i = 1<br>
+＞＞＞while i ＜= 6:　　   ← i が6以下の間は条件が成り立つ<br>
+＞＞＞    print(‘*’* i)<br>
+＞＞＞    i = i + 1<br>
+    
+どのような結果になりましたか？  
+</p>
+<div class="switchdsp">
+<label for="l-1">
+<span class="clicktxt">回答をクリックして確認</span>
+</label>
+<input type="checkbox" id="l-1"><div class="dsp">
+<p>回答<br>
+*<br>
+**<br>
+***<br>
+****<br>
+*****<br>
+******</p>
+</div></div>
+
+<p>while文で何が起きているかわかりづらい時は、いったんwhile文の中身を書き下してみましょう。<br>
+i = 1<br>
+while i ＜= 6:<br>
+print(‘*’* i)<br>
+i = i + 1　　　　　　　　1回目（今は i = 1)<br>
+----------------------------<br>
+print(‘*’* i)<br>
+i = i + 1　　　　　　　　2回目（今は i = 2）<br>
+----------------------------<br>
+print(‘*’* i)<br>
+i = i + 1　　　　　　　　3回目（今は i = 3）<br>
+----------------------------<br>
+...</p>
+<br>
+<p>例題<br>
+１からｎまでの合計の数を計算する関数 sigma(n) を定義してください。<br>
+＞＞＞# 1 + 2 + ... + n を計算する関数 sigma(n)<br>
+＞＞＞def sigma(n):<br>
+＞＞＞    total = 0<br>
+＞＞＞    i  = 1<br>
+＞＞＞    while I ＜= n:<br>
+＞＞＞        total += i<br>
+＞＞＞        i += 1<br>
+＞＞＞    return total<br>
+<br>
+i = 1, 2, 3, ... , nで繰り返す仕組みを用意すれば<br>
+あとは変数 total にそれぞれを足していけばＯＫ！</p>
+
+<p>while文に失敗すると永遠にプログラムが動き続けてしまうことがあります。<br>
+そのような場合は「Ctrl + C」を押すと強制終了することができます。<br>
+以下のプログラムを動かして、強制終了してみましょう。<br>
+<br>    
+＞＞＞while True:<br>
+＞＞＞    for i in range(100):<br>
+＞＞＞         print("*" * i)<br>
+＞＞＞</p>
+
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第６章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="授業ページ２.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="演習・問題ページ.html">問題を解く</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第六章</h1>
+<div class="lesson">
+<h2>平方根</h2>
+<h3>pythonで平方根を求めるには「mathモジュール」というものを利用します。<br>
+モジュールは簡単に言うと“通常の機能ではできないことをできるようにするもの”です。<br>
+ゲームのDLCや拡張機能のようなものです。<br>
+mathモジュールを用いると平方根や円周率、三角関数など数学関連の処理が行えるようになります。使い方は以下のコードを入力するだけです。<br>
+・import math<br>
+これでmathモジュールを利用することができます。</h3>
+
+<p>ではルート付きの計算をしていきましょう。<br>
+書き方は以下の通りです。<br>
+・math.sqrt(数値)<br>
+<br>
+実際にいくつか書いてみましょう。<br>
+・√9<br>
+　3.0<br>
+<br>
+・√2<br>
+　1.4142135623730951<br>
+<br>
+・√(9+7)<br>
+　4.0<br>
+<br>
+値は少数(float)で返されるので注意しましょう。</p>
+<br>
+<p>Mathモジュールにはほかにも様々な機能があります。<br>
+以下のサイトで調べて利用しましょう。<br>
+<a href="https://docs.python.org/ja/3/library/math.html">https://docs.python.org/ja/3/library/math.html</a><br>
+例：math.pi（円周率）,math.gcd（最大公約数）,math.logx（xを底とする対数）</p>
+
+
+
+</div>
+<div class="REPL">
+<ul><a href="https://replit.com/languages/python3" target="_blank" rel="norefferrer"><label>Repl.itを開く</label></a>
+<input type="checkbox" id="Push">
+<label class="Push" for="Push">この下にREPLを開く</label>
+<div class="Brython"><iframe src="http://brython.info/console.html" width="400" height="400"></iframe></div>
+<!--REPLはBrython(javascriptのライブラリらしい)でできるみたい-->
+<!--ボタンを押すとBrythonのREPLがでるようにしたい--></ul>
+</div>
+</body>
+</html>
