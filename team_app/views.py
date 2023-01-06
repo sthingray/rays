@@ -34,3 +34,4 @@ def alltest(request):
     return render(request, 'team_app/演習問題.html')
 
 
+
