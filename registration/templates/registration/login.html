@@ -1,5 +1,51 @@
+<<<<<<< HEAD:registration/templates/registration/login.html
 {% extends "base.html" %}
 {% block main %}
 {% include "_form.html" with submit_label="ログイン" %}
 <p><a href="{% url 'signup' %}">サインアップ</a></p>
 {% endblock %}
+=======
+{% load static %}
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css\authtest.css' %}">
+  </head>
+  
+
+<body>
+
+  <div class="title-header">
+    <h1 class="title">数学アプリ</h1>
+  </div>
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+    <div class="login">
+      <div class="login-triangle"></div>
+      
+      <h2 class="login-header">Log in</h2>
+
+      <form method="POST" class="login-container">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Log in" />
+        <input type="hidden" name="next" value="{% url 'index' %}">
+      </form>
+    </div>
+
+    <div class="home-div">
+      <a href="{% url 'home' %}" class="home">HOME</a>
+    </div>
+
+    <div class="home-div">
+      <a href="{% url 'signup' %}" class="home">Signup</a>
+    </div>
+
+  </body>
+</html>
+>>>>>>> parent of 833b820 (ログイン訂正):accounts/templates/registration/login.html

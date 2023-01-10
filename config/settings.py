@@ -40,6 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'team_app',
+<<<<<<< HEAD
+=======
+    'channels',
+    'authtest',
+    'account',
+>>>>>>> parent of 833b820 (ログイン訂正)
 ]
 
 MIDDLEWARE = [
