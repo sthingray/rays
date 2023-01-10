@@ -39,14 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'team_app',
-<<<<<<< HEAD
-    'channels',
-    'authtest',
-    'account',
-=======
     'authtest',
     'accounts',
->>>>>>> parent of 85bf939 (ログイン、サインアップ)
 ]
 
 MIDDLEWARE = [
