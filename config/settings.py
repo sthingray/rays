@@ -25,14 +25,13 @@ SECRET_KEY = 'django-insecure-3qd&7b60r22f(d0k$)1^lo&9b$#@q&@l0-g0r$8t!s%s!y%*80
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Application definition
 
 INSTALLED_APPS = [
-    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,9 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'team_app',
+<<<<<<< HEAD
     'channels',
     'authtest',
     'account',
+=======
+    'authtest',
+    'accounts',
+>>>>>>> parent of 85bf939 (ログイン、サインアップ)
 ]
 
 MIDDLEWARE = [
