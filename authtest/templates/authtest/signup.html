@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css\authtest.css' %}">
+    </head>
+    <body>
+        <div class="title-header">
+            <h1 class="title">────INIAD DJANGO BLOG────</h1>
+        </div>
+        <div class="login">
+            <div class="login-triangle"></div>
+            
+            <h2 class="login-header">Sign up</h2>
+      
+            <form method="POST" class="login-container">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit" class=btn btn-primary class="a">ユーザー登録</button>
+              <input type="hidden" name="next" value="url">
+            </form>
+          </div>
+      
+          <div class="home-div">
+            <a href="{% url 'home' %}" class="home">HOME</a>
+          </div>
+          <div class="home-div">
+            <a href="{% url 'login' %}" class="home">Login</a>
+          </div>
+    </body>
+</html>
