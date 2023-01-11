@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第１章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="演習・問題ページ.css">
+<script src="/js/brython.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="四則演算.html">授業に戻る</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第一章</h1>
+<div class="exercises">
+<h3>Pythonに以下の指示を行った結果を予想し、実際に得られた結果を入力してみましょう。</h3>
+<p><ol>4.0+3.7-1.9<textarea rows="1" cols="20"></textarea></ol>
+    <ol>2.7*3.9<textarea rows="1" cols="20"></textarea></ol>
+    <ol>2/7<textarea rows="1" cols="20"></textarea></ol>
+    <ol>(4.4+5.5)*6.6<textarea rows="1" cols="20"></textarea></ol>
+    <ol>78//9<textarea rows="1" cols="20"></textarea></ol>
+    <ol>2**3<textarea rows="1" cols="20"></textarea></ol>
+    <ol>9+((8+7.6)*5.4-3)/2<textarea rows="1" cols="20"></textarea></ol>
+</p>
+</div>
+<div class="REPL">
+<!--ここにBrython(javascriptのライブラリらしい)を直接埋め込みたい-->
+<iframe src="http://brython.info/console.html" width="500" height="400"></iframe>
+</div>
+</body>
+</html>
