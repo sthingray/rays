@@ -1,0 +1,44 @@
+{% load static %}
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css\authtest.css' %}">
+  </head>
+  
+
+<body>
+
+  <div class="title-header">
+    <h1 class="title">────INIAD DJANGO BLOG────</h1>
+  </div>
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+    <div class="login">
+      <div class="login-triangle"></div>
+      
+      <h2 class="login-header">Log in</h2>
+
+      <form method="POST" class="login-container">
+        {% csrf_token %}
+        <p><input type="text" placeholder="ユーザー名"></p>
+        <p><input type="password" placeholder="パスワード"></p>
+        <p><input type="submit" value="Log in"></p>
+        <!-- ログイン直後のリダイレクト先(まだない)-->
+        <input type="hidden" name="next" value="url">
+      </form>
+    </div>
+
+    <div class="home-div">
+      <a href="{% url 'home' %}" class="home">HOME</a>
+    </div>
+    <div class="home-div">
+      <a href="{% url 'signup' %}" class="home">Signup</a>
+    </div>
+
+  </body>
+</html>
