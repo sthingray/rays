@@ -1,0 +1,56 @@
+{% extends 'team_app/home.html' %}
+
+{% load contents %}
+
+<div class="area">
+    <input type="radio" name="tab_name" id="tab1" checked>
+    <label class="tab_class" for="tab1">STEP1</label>
+    <div class="content_class">
+        <div id="tabbody">
+            <div id="tabpage1">
+                <li><a href="{% url 'calcu' %}">四則演算</a></li>
+                <li><a href="{% url 'calcutest' %}">四則演算：演習問題</a></li>
+                <li><a href="{% url 'func' %}">関数</a></li>
+                <li><a href="{% url 'functest' %}">関数：演習問題</a></li>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab2" >
+    <label class="tab_class" for="tab2">STEP2</label>
+    <div class="content_class">
+        <div id="tabbody">
+            <div id="tabpage2">
+                <p>タブ2のコンテンツを表示します</p>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab3" >
+    <label class="tab_class" for="tab3">STEP3</label>
+    <div class="content_class">
+        <div id="tabbody">
+            <div id="tabpage3">
+                <p>タブ3のコンテンツを表示します</p>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab4" >
+    <label class="tab_class" for="tab4">STEP4</label>
+    <div class="content_class">
+        <div id="tabbody">
+            <div id="tabpage1">
+                <p>タブ4のコンテンツを表示します</p>
+            </div>
+        </div>
+    </div>
+    <input type="radio" name="tab_name" id="tab5" >
+    <label class="tab_class" for="tab5">STEP5</label>
+    <div class="content_class">
+        <div id="tabbody">
+            <div id="tabpage2">
+                <p>タブ4のコンテンツを表示します</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock contents %}
