@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>第五章</title>
+<link rel="stylesheet"
+ type="text/css"
+ href="演習・問題ページ.css">
+<script src="/js/brython.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="team_app/templates/mypage.html">マイページ</a></li>
+        <li><a href="#1">前のページ</a></li>
+        <li><a href="四則演算.html">授業に戻る</a></li>
+        <li><a href="#1">次の授業</a></li>
+      </ul>
+     </div>
+<h1>第五章</h1>
+<div class="exercises">
+<h2></h2>
+<p>変数a,bの平均値を求める関数'ave'を作ってみましょう。<br>
+<br>
+動作例<br>
+＞＞＞ average(45,56)<br>
+50.5<br>
+＞＞＞ average(234, -234)<br>
+0.0<br>
+</p>
+<ol><textarea rows="3" cols="20"></textarea></ol>
+
+</div>
+<div class="REPL">
+<!--ここにBrython(javascriptのライブラリらしい)を直接埋め込みたい-->
+<iframe src="http://brython.info/console.html" width="500" height="400"></iframe>
+</div>
+</body>
+</html>
